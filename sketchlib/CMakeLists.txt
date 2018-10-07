@@ -1,5 +1,3 @@
-project(sketchlib)
-
 set(HEADERS
     basecontainer.h
     containerfactory.h
@@ -93,7 +91,7 @@ set(SOURCES
     container/triangle.cpp
 )
 
-add_library(sketchlib ${HEADERS} ${SOURCES})
+add_library(sketchlib SHARED ${HEADERS} ${SOURCES})
 
 target_compile_definitions(sketchlib PRIVATE SKETCHLIB_LIBRARY)
 

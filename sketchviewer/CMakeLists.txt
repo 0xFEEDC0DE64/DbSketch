@@ -1,5 +1,3 @@
-project(sketchviewer)
-
 set(HEADERS
 )
 
