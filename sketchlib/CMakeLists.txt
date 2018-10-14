@@ -98,3 +98,5 @@ target_compile_definitions(sketchlib PRIVATE SKETCHLIB_LIBRARY)
 target_link_libraries(sketchlib Qt5::Core Qt5::Gui Qt5::Widgets quazip)
 
 target_include_directories(sketchlib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_dependencies(sketch sketchlib)
